@@ -55,6 +55,7 @@
         <section class="filter-list">
             <h2 class="visually-hidden">Список фильтров</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+
                
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Цена</legend>
@@ -62,21 +63,92 @@
                         <span class="visually-hidden">Изменить мин цену</span>
                     </button>
                     <button class="polzunok-max" type="button">
-                        <span class="visually-hidden">Изменить макс цену</span>
-                        
-
-
-
-                        
+                        <span class="visually-hidden">Изменить макс цену</span> 
                     </button>
+                    <label class="polzunok">от
+                    <input class="polzunok" type="number" name="min-price">₽
+                  </label>
+                  <label class="polzunok">до
+                    <input class="polzunok" type="number" name="max-price">₽
+                  </label>
                     </fieldset>
+
 
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Производители</legend>
+                        <ul class="catalog-filter">
+                          <li class="catalog-filter-item">
+                            <label class="checkbox">
+                              <input class="visually-hidden checkbox" type="checkbox"  name="Bed Head for Men">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Bed Head for Men</span>
+                            </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                            <label class="checkbox">
+                              <input class="visually-hidden checkbox" type="checkbox"  name="Homme Deep Cleansing Cool" checked>
+                              <span class="control-mark"></span>
+                              <span class="control-label">Homme Deep Cleansing Cool</span>
+                            </label>
+                          </li>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="checkbox">
+                            <input class="visually-hidden checkbox" type="checkbox"  name="So Intense" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">So Intense</span>
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="checkbox">
+                            <input class="visually-hidden checkbox" type="checkbox"  name="Sprekenhus">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Sprekenhus</span>
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="checkbox">
+                            <input class="visually-hidden checkbox" type="checkbox"  name="Firm Storе">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Firm Storе</span>
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="checkbox">
+                            <input class="visually-hidden checkbox" type="checkbox"  name="Winter Body" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Winter Body</span>
+                          </label>
+                        </li>
+                        </ul>
                         </fieldset>
 
                         <fieldset class="catalog-filter-group">
                             <legend class="catalog-filter-title">Группы товаров</legend>
+                            <ul class="catalog-filter">
+                              <li class="catalog-filter-item">
+                                <label class="radio">
+                                <input class="visually-hidden radio" type="radio" name="product-group" value="Бритвенные принадлежности">
+                                <span class="control-mark"></span>
+                            <span class="control-label">Бритвенные принадлежности</span>
+                              </label>
+                              </li>
+                              <li class="catalog-filter-item">
+                                <label class="radio">
+                                <input class="visually-hidden radio" type="radio" name="product-group" value="Средства для ухода" checked>
+                                <span class="control-mark"></span>
+                            <span class="control-label">Средства для ухода</span>
+                              </label>
+                              </li>
+                              <li class="catalog-filter-item">
+                                <label class="radio">
+                                <input class="visually-hidden radio" type="radio" name="product-group" value="Аксессуары">
+                                <span class="control-mark"></span>
+                            <span class="control-label">Аксессуары</span>
+                              </label>
+                              </li>
+                            </ul>
+
                             </fieldset>
                 
                 
