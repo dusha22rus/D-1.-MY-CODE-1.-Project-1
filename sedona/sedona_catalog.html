@@ -131,26 +131,127 @@
             <button class="button" type="reset">Сбросить</button>
             </form>
         </section>
+
         <section class="filters-2">
             <h2 class="filters-2-title">Найдено гостиниц: 38</h2>
             <form class=sorting-type"">
                 <label class="visually-hidden" for="sorting">Сортировка</label>
-                <select name="гостиницы" id="sorting">
-                    <option value="">--Please choose an option--</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
+                <select class="select-control" name="sorting" id="sorting"> 
+                    <option value="expensive">Сначала дорогие</option>              
+                    <option value="cheap">Сначала дешевые</option>  
+                    <option value="popukar">Сначала популярные</option>                                    
                 </select>
+                <button class="visually-hidden" type="submit">Отсортировать Гостиницы</button>
             </form>
-
-
+            <a href="#" class="button button-light">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>           
         </section>
         
-             
-    
+        <section class="gostinicy">
+            <ul class="gostinicy-list">
+                <li class="gostinicy-card">
+                  <a class="gostinicy-card-link" href="product.html">
+                    <img class="gostinicy-card-image" src="1Amara Resort & Spa.png" alt="Amara Resort & Spa" width="300" height="206">
+                    <h3 class="gostinicy-card-title">Amara Resort & Spa</h3>
+                  </a>
+                  <span class="gostinicy-card-type">Гостиница</span>
+                  <b class="gostinicy-card-price">От 4000 ₽</b>
+                  <a class="podrobnee-button button" href="#">подробнее</a>
+                  <a class="izbrannoe-button button" href="#">В избранное</a>                  
+                </li>
+
+                <li class="gostinicy-card">
+                    <a class="gostinicy-card-link" href="product.html">
+                      <img class="gostinicy-card-image" src="2Desert Quail Inn.png" alt="Desert Quail Inn" width="300" height="206">
+                      <h3 class="gostinicy-card-title">Desert Quail Inn</h3>
+                    </a>
+                    <span class="gostinicy-card-type">Гостиница</span>
+                    <b class="gostinicy-card-price">От 3000 ₽</b>
+                    <a class="podrobnee-button button" href="#">подробнее</a>
+                    <a class="izbrannoe-button button" href="#">В избранное</a>                  
+                  </li>
+
+                  <li class="gostinicy-card">
+                    <a class="gostinicy-card-link" href="product.html">
+                      <img class="gostinicy-card-image" src="3Villas at Poco Diablo.png" alt="Villas at Poco Diablo" width="300" height="206">
+                      <h3 class="gostinicy-card-title">Villas at Poco Diablo</h3>
+                    </a>
+                    <span class="gostinicy-card-type">Гостиница</span>
+                    <b class="gostinicy-card-price">От 3000 ₽</b>
+                    <a class="podrobnee-button button" href="#">подробнее</a>
+                    <a class="izbrannoe-button button" href="#">В избранное</a>                  
+                  </li>
+
+                  <li class="gostinicy-card">
+                    <a class="gostinicy-card-link" href="product.html">
+                      <img class="gostinicy-card-image" src="3Villas at Poco Diablo.png" alt="Villas at Poco Diablo" width="300" height="206">
+                      <h3 class="gostinicy-card-title">Villas at Poco Diablo</h3>
+                    </a>
+                    <span class="gostinicy-card-type">Гостиница</span>
+                    <b class="gostinicy-card-price">От 2000 ₽</b>
+                    <a class="podrobnee-button button" href="#">подробнее</a>
+                    <a class="izbrannoe-button button" href="#">В избранное</a>                  
+                  </li>
+
+                  <li class="gostinicy-card">
+                    <a class="gostinicy-card-link" href="product.html">
+                      <img class="gostinicy-card-image" src="4GreenTree Inn.png" alt="GreenTree Inn" width="300" height="206">
+                      <h3 class="gostinicy-card-title">4GreenTree Inn</h3>
+                    </a>
+                    <span class="gostinicy-card-type">Гостиница</span>
+                    <b class="gostinicy-card-price">От 3000 ₽</b>
+                    <a class="podrobnee-button button" href="#">подробнее</a>
+                    <a class="izbrannoe-button button" href="#">В избранное</a>                  
+                  </li>                
+              </ul>
+
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-prev pagination-disabled">
+                    <span class="visually-hidden">Предыдущая страница</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-next" href="#">
+                    <span class="visually-hidden">Следующая страница</span>
+                  </a>
+                </li>
+              </ul>
+              <button class="button pagination-show-more" type="button">Показать ещё</button>
+        </section>
+
+        <section class="section-6">
+            <h2 class="zagolovok-3">Подпишитесь на рассылку</h2>
+            <p class="podzagolovok-4">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+            <form class="podpiska" action="https://echo.htmlacademy.ru" method="post">
+                <p class="news-e-mail">
+                    <label class="visually-hidden" for="news-e-mail">Email</label>
+                    <input class="field" placeholder="Ваш e-mail" type="news-e-mail" name="news-e-mail" id="news-e-mail" required> 
+                </p>
+              <button class="news-button" type="submit">
+                <span class="visually-hidden">Подписаться</span>
+              </button>
+            </form>       
+        </section>                    
     </main>
     <footer class="main-footer">
         <section class="fsection-1">
